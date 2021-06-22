@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Siksha</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="passer">required more than 6 char password</string>
+    <string name="player_error">vnkfjdvkjvhjkvh</string>
+    <string name="api_key">hgjhgjhgjh</string>
+</resources>

@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUser">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_marginBottom="17dp"
+            android:text=" Enter User Detail "
+            android:background="#FFB300" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical" >
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+        -
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Email*"
+            android:textColor="#A19C9C"
+            />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter email"
+        android:textSize="17sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#3949AB"
+        android:textColor="#0C0C4E"
+        android:padding="8dp"
+        android:textColorHint="#C0121249"
+        android:inputType="textEmailAddress"
+         />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Password*"
+            android:textColor="#A19C9C"
+            />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="17sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#3949AB"
+        android:textColor="#0C0C4E"
+        android:textColorHint="#0C0C4E"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+         />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Session*"
+            android:textColor="#A19C9C"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:background="#000"
+            android:layout_height="wrap_content"
+            android:id="@+id/sessions" />
+        <EditText
+            android:id="@+id/Session"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="17sp"
+            android:backgroundTint="#3949AB"
+            android:padding="8dp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter student session"
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="MP registration number*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/mpregno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter MP registration number "
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:backgroundTint="#3949AB"
+            android:padding="8dp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Name*"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:padding="8dp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter name"
+            android:inputType="text"
+
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Father name*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter father name"
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Date of birth*"
+            android:textColor="#A19C9C"
+            />
+
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter date of birth"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:inputType="text"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Category*"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="SC/OBC/GEN/ST"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Gender*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter gender of student "
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Mobile number*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter mobile number "
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Shift*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/Shift"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter shift"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Unit*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter unit"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Admission Date*"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/Admndt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter admission date"
+            android:inputType="text"  />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Fees*"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/fees"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter total fees of student "
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Due fees*"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/feesd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter due fees "
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Digital registration number*"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/dgtregno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textSize="17sp"
+            android:backgroundTint="#3949AB"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter digital registration no."
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="UID*"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/uid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Enter UID "
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Address*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter address"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Qexam*"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/qexam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Qexam"
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textStyle="italic"
+            android:text="Qresult*"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/qresult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            android:hint="Qresult"
+            android:inputType="text"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Board*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/board"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter board of student school"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="TC number*"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/tcno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter TC number "
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Last Institute*"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/lastinstitute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter last institute"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:textStyle="italic"
+            android:text="HQ"
+            android:textColor="#A19C9C"
+            />
+        <EditText
+            android:id="@+id/hq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter HQ"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:backgroundTint="#3949AB"
+            android:textSize="17sp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/buttong"
+            android:text="submit"
+            android:id="@+id/submit" />
+
+
+    </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

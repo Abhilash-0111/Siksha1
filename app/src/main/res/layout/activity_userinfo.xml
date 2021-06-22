@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".Userinfo">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:background="#D4E157"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/simg7"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#01579B"
+        android:background="#D4E157"
+        android:textSize="19dp"
+        android:paddingBottom="4dp"
+        android:text="Student profile" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Name : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Father Name : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/namef"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Gender : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/gender"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Last institute : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/preinst"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="DOB : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/dob"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Admission date : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/admndt"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Address : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/Address"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_marginBottom="17dp"
+            android:background="#FFFDE7"
+            android:padding="4dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Mobile number : "
+                android:textColor="#000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:id="@+id/mobile"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:textColor="#F4511E"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
